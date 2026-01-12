@@ -4,6 +4,7 @@ const game = new Chess();
 // Use online Stockfish
 const engine = new Worker('https://cdn.jsdelivr.net/gh/niklasf/stockfish.js/stockfish.js');
 
+
 engine.onmessage = function(event) {
     console.log(event.data);
 };
