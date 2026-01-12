@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chess Game Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/1.0.0/chess.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Chess Game Analyzer</h1>
+        <textarea id="pgnInput" placeholder="Paste your PGN here"></textarea>
+        <button id="analyzeBtn">Analyze Game</button>
+        <div id="board" style="width: 400px; margin:20px auto;"></div>
+        <div id="review"></div>
+    </div>
+
+    <script src="stockfish.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
